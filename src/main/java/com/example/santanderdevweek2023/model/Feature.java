@@ -13,7 +13,7 @@ import lombok.*;
 @AllArgsConstructor
 
 @Entity
-public class Features {
+public class Feature {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

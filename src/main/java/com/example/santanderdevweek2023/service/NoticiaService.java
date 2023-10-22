@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class NoticiaService {
 
-    @Autowired
-    private NoticiaRepository noticiaRepository;
+    private final NoticiaRepository noticiaRepository;
 
-
-
+    public NoticiaService(NoticiaRepository noticiaRepository) {
+        this.noticiaRepository = noticiaRepository;
+    }
 }

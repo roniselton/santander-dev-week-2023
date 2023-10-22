@@ -22,10 +22,10 @@ public class Usuario {
     private List<CartaoCredito> cartoesCredito;
 
     @OneToMany( cascade = CascadeType.ALL)
-    private List<CartaoCredito> contas;
+    private List<ContaBancaria> contas;
 
     @OneToMany
-    private List<Features> features;
+    private List<Feature> features;
 
 
 
