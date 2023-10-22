@@ -68,5 +68,12 @@ public class UsuarioService {
             throw new BusinessException("Nome é obrigatório!");
     }
 
+    public void excluir(Long id){
+        if( !usuarioRepository.existsById( id ))
+            throw new BusinessException("Usuario nao encontrado");
+
+        usuarioRepository.deleteById( id );
+    }
+
 
 }
